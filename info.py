@@ -13,47 +13,47 @@ def is_enabled(value, default):
 #---------------------------------------------------------------
 #---------------------------------------------------------------         ,
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+API_ID = int(environ.get('API_ID', '9301845'))
+API_HASH = environ.get('API_HASH', '563e9fd30b529442b705c7230f766b83')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7951087816:AAFpaUPMB25SPZkVoOnigoSosZxIJ6qAjN4')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7419852496 6309625016').split()]
-USERNAME = environ.get('USERNAME', "https://t.me/aj_adminn_bot") # ADMIN USERNAME
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', '')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1952992043 5673274527 5348874903 617075060').split()]
+USERNAME = environ.get('USERNAME', "https://t.me/jithu2252") # ADMIN USERNAME
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001694472922'))
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/TmaRequest')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001201699325 -1001511163820 -1001435020763 -1001438293617 -1001556008450 -1001291060083 -1001465431548 -1001227500379 -1001543949874 -1001558654003 -1001438293617 -1001479888204 -1001610031839 -1001435020763 -1001636626174 -1001445318928 -1001625705075 -1001274297517 -1001374485034 -1001625705075 -1001722756764 -1001543052371 -1001651078319 -1001897929503 -1001894642188 -1001584049741 -1001575548787 -1001750398333 -1002341112869 -1002292560874').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://tma:Tmaadda2252@cluster0.muqwo.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "TmaMoviesbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))  
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL','0'))
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS',''))
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
-auth_channel = environ.get('AUTH_CHANNEL', '')
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '0'))
-request_channel = environ.get('REQUEST_CHANNEL', '0')
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', ''))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+wzB-8NWd6vdhOTI1') #Support group link ( make sure bot is admin )
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001694472922'))  
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1001694472922'))
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002474725784'))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001694472922'))
+auth_channel = environ.get('AUTH_CHANNEL', '-1001742515179')
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1001541584194'))
+request_channel = environ.get('REQUEST_CHANNEL', '-1001568999811') # If anyone sends a request message to your bot, you will get it in this channel.
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002463894121')) # 
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+p0-BC35VUHJiMzU1') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', False)
 #---------------------------------------------------------------
-TUTORIAL = environ.get("TUTORIAL", "")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/how_to_use_tmafilesbot")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "74b308ea3b6b466a5116613403c051e12327485b")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'publicearn.in')
-SHORTENER_API2 = environ.get("SHORTENER_API2", "74b308ea3b6b466a5116613403c051e12327485b")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'publicearn.in')
-SHORTENER_API3 = environ.get("SHORTENER_API3", "74b308ea3b6b466a5116613403c051e12327485b")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'publicearn.in')
-TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "43200"))
-THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "43200"))
+SHORTENER_API = environ.get("SHORTENER_API", "8543b643f5f63bb15979556c130b9f4d64e30576")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'modijiurl.com')
+SHORTENER_API2 = environ.get("SHORTENER_API2", "d9e0c20b4b5de13495164f28fc08e8d71245e3de")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'offerlinks.in')
+SHORTENER_API3 = environ.get("SHORTENER_API3", "928f016f7d48c35adb6673be0c4f45ff86c10d19")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'gyanilinks.com')
+TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
+THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam", "bengali", "marathi", "gujarati", "punjabi"]
